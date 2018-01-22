@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="24.663934">
+<testcase classname="Seller PO" name="Create Seller PO" time="24.663934">
+<system-out><![CDATA[Given User already on login page............................................passed
+When title is seller........................................................passed
+Then enter data "himanshu.singh@industrybuying.com" and "him"...............passed
+Then Click login button.....................................................passed
+Then Click on PO List.......................................................passed
+Then Click on new PO........................................................passed
+Then Enter "BDDAuto" and "Bluemoon".........................................passed
+Then close browser..........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
