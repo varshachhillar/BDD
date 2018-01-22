@@ -3,134 +3,194 @@
     "line": 1,
     "elements": [
       {
-        "line": 16,
+        "comments": [
+          {
+            "line": 3,
+            "value": "#With examples keyword"
+          },
+          {
+            "line": 4,
+            "value": "#Scenario Outline: Create Seller PO"
+          },
+          {
+            "line": 5,
+            "value": "#"
+          },
+          {
+            "line": 6,
+            "value": "#Given User already on login page"
+          },
+          {
+            "line": 7,
+            "value": "#When title is seller"
+          },
+          {
+            "line": 8,
+            "value": "#Then enter data \"\u003cusername\u003e\" and \"\u003cpassword\u003e\""
+          },
+          {
+            "line": 9,
+            "value": "#Then Click login button"
+          },
+          {
+            "line": 10,
+            "value": "#Then Click on PO List"
+          },
+          {
+            "line": 11,
+            "value": "#Then Click on new PO"
+          },
+          {
+            "line": 12,
+            "value": "#Then Enter \"\u003cponame\u003e\" and \"\u003cclient\u003e\""
+          },
+          {
+            "line": 13,
+            "value": "#Then close browser"
+          },
+          {
+            "line": 14,
+            "value": "#"
+          },
+          {
+            "line": 15,
+            "value": "#Examples:"
+          },
+          {
+            "line": 16,
+            "value": "#\t| username | password | poname | client|"
+          },
+          {
+            "line": 17,
+            "value": "#\t| himanshu.singh@industrybuying.com | him | BDDAuto | Bluemoon |"
+          },
+          {
+            "line": 18,
+            "value": "#"
+          },
+          {
+            "line": 20,
+            "value": "#Using table"
+          }
+        ],
+        "line": 21,
         "name": "Create Seller PO",
         "description": "",
-        "id": "seller-po;create-seller-po;;2",
+        "id": "seller-po;create-seller-po",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 13478134192,
+              "duration": 14225534541,
               "status": "passed"
             },
-            "line": 5,
+            "line": 23,
             "name": "User already on login page",
             "match": {
-              "location": "LoginStep.user_already_on_login_page()"
+              "location": "UsingTable.user_already_on_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 333397127,
+              "duration": 80077229,
               "status": "passed"
             },
-            "line": 6,
+            "line": 24,
             "name": "title is seller",
             "match": {
-              "location": "LoginStep.title_is_seller()"
+              "location": "UsingTable.title_is_seller()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1291105401,
+              "duration": 1900678349,
               "status": "passed"
             },
-            "line": 7,
-            "name": "enter data \"himanshu.singh@industrybuying.com\" and \"him\"",
+            "line": 25,
+            "name": "enter data username and password",
             "match": {
-              "arguments": [
-                {
-                  "val": "himanshu.singh@industrybuying.com",
-                  "offset": 12
-                },
-                {
-                  "val": "him",
-                  "offset": 52
-                }
-              ],
-              "location": "LoginStep.enter_data(String,String)"
+              "location": "UsingTable.enter_data(DataTable)"
             },
-            "matchedColumns": [
-              0,
-              1
+            "rows": [
+              {
+                "cells": [
+                  "himanshu.singh@industrybuying.com",
+                  "him"
+                ],
+                "line": 26
+              }
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 95306259,
+              "duration": 100956546,
               "status": "passed"
             },
-            "line": 8,
+            "line": 27,
             "name": "Click login button",
             "match": {
-              "location": "LoginStep.click_login_button()"
+              "location": "UsingTable.click_login_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 5996895028,
+              "duration": 4791497825,
               "status": "passed"
             },
-            "line": 9,
+            "line": 28,
             "name": "Click on PO List",
             "match": {
-              "location": "LoginStep.click_on_PO_List()"
+              "location": "UsingTable.click_on_PO_List()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 562784054,
+              "duration": 1010439658,
               "status": "passed"
             },
-            "line": 10,
+            "line": 29,
             "name": "Click on new PO",
             "match": {
-              "location": "LoginStep.click_on_new_PO()"
+              "location": "UsingTable.click_on_new_PO()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1835691292,
+              "duration": 1956860640,
               "status": "passed"
             },
-            "line": 11,
-            "name": "Enter \"BDDAuto\" and \"Bluemoon\"",
+            "line": 30,
+            "name": "Enter poname and client",
             "match": {
-              "arguments": [
-                {
-                  "val": "BDDAuto",
-                  "offset": 7
-                },
-                {
-                  "val": "Bluemoon",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginStep.enter_and(String,String)"
+              "location": "UsingTable.enter_and(DataTable)"
             },
-            "matchedColumns": [
-              2,
-              3
+            "rows": [
+              {
+                "cells": [
+                  "BDDAuto",
+                  "Bluemoon"
+                ],
+                "line": 31
+              }
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1070621043,
+              "duration": 780309543,
               "status": "passed"
             },
-            "line": 12,
+            "line": 32,
             "name": "close browser",
             "match": {
-              "location": "LoginStep.close_browser()"
+              "location": "UsingTable.close_browser()"
             },
             "keyword": "Then "
           }
