@@ -1,0 +1,4 @@
+stepDefinition\cumteststep\cumstep.class
+runner\testrunner1.class
+runner\TestRunner.class
+stepDefinition\LoginStep.class
